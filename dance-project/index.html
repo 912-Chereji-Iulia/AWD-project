@@ -1,16 +1,127 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>DanceProject</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body class="mat-typography">
-  <app-root></app-root>
-</body>
-</html>
+<div class="navbar">
+    <ul>
+      <li><a href="#etymology">Etymology</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#styles">Dance Styles</a></li>
+      <li><a href="#famous">Famous Dancers</a></li>
+      <li><a href="#perspectives">Perspectives</a></li>
+      <li><a href="#carousel">Gallery</a></li>
+    </ul>
+  </div>
+  
+  <!-- Banner Image Styling (Full Screen) -->
+  <div class="banner">
+    <div class="banner-content">
+      <h1>Welcome to the World of Dance</h1>
+      <p>Explore the art, history, and beauty of movement.</p>
+    </div>
+  </div>
+  
+  <!-- Etymology Section -->
+  <div id="etymology" class="section">
+    <h2>Etymology of the Word "Dance"</h2>
+    <p>
+      The word "dance" has its origins in the Middle English word <strong>dans</strong>, which comes from the Old French <strong>dancer</strong>, meaning "to stretch out" or "to move lightly." The root of these words can be traced to the Latin word <em>daps</em>, meaning "a feast" or "celebration," suggesting that dance was originally part of ceremonial feasts and rituals.
+    </p>
+    <p>
+      Over time, the meaning expanded to include any rhythmic movement to music, evolving across different cultures and languages.
+    </p>
+  </div>
+  
+  <!-- History Section -->
+  <div id="history" class="section">
+    <h2>The History of Dance</h2>
+    <p>
+      Dance is believed to be one of the oldest art forms. Evidence of early dance dates back to prehistory, with ancient civilizations like the Egyptians, Greeks, and Indians incorporating dance into rituals and performances. The first known depictions of dancing in human culture appear in cave paintings dating back over 9,000 years.
+    </p>
+    <p>
+      In ancient Greece, dance was seen as a form of storytelling. During the Renaissance period, ballet emerged as a highly structured form of dance that combined art and performance. Since then, dance has been an integral part of cultural expression, evolving into various forms and techniques.
+    </p>
+  </div>
+  
+  <!-- Dance Styles Section -->
+  <div id="styles" class="section">
+    <h2>Famous Dance Styles</h2>
+    <p>
+      Dance is incredibly diverse, and the world boasts a rich array of styles, each with unique cultural significance and techniques. Below are a few of the most iconic dance styles:
+    </p>
+    <ul>
+      <li><strong>Ballet</strong>: A highly technical and artistic form of dance that originated in Renaissance Italy. It focuses on precision, control, and grace.</li>
+      <li><strong>Hip-hop</strong>: A street dance style that emerged in the 1970s in New York. It emphasizes improvisation, energy, and personal expression.</li>
+      <li><strong>Salsa</strong>: A lively, rhythmic dance originating from Cuban and Caribbean cultures, often performed to upbeat Latin music.</li>
+      <li><strong>Tango</strong>: A passionate and dramatic ballroom dance that originated in Argentina in the late 19th century.</li>
+      <li><strong>Contemporary</strong>: A modern form that blends elements of ballet, jazz, and modern dance, often characterized by fluid, expressive movements.</li>
+    </ul>
+  </div>
+  
+  <!-- Famous Dancers Section -->
+  <div id="famous" class="section">
+    <h2>Famous Dancers in History</h2>
+    <p>
+      Dance has produced numerous legendary figures who have shaped the art form and inspired generations. Some of the most iconic dancers include:
+    </p>
+    <ul>
+      <li><strong>Martha Graham</strong>: A pioneer of modern dance known for her expressive, emotional style and the development of the "Graham Technique."</li>
+      <li><strong>Fred Astaire</strong>: A legendary figure in American film and ballroom dance, known for his elegance and innovative choreography.</li>
+      <li><strong>Michael Jackson</strong>: A pop icon whose groundbreaking music videos and dance moves, such as the moonwalk, changed the world of pop music and dance forever.</li>
+      <li><strong>Anna Pavlova</strong>: A Russian prima ballerina famous for her portrayal of "The Dying Swan," one of the most iconic moments in ballet history.</li>
+    </ul>
+  </div>
+
+  <!-- Perspectives Section -->
+  <div id="perspectives" class="section">
+    <h2>What Dance Means to Us</h2>
+    <div class="perspectives-container">
+      <!-- Column 1: Mom -->
+      <div class="perspective-column">
+        <h3>My Mom</h3>
+        <p>
+          "Dance has always been a source of joy and inspiration. Watching my child grow through dance has been one of the most beautiful experiences of my life."
+        </p>
+      </div>
+      <!-- Column 2: Coach -->
+      <div class="perspective-column">
+        <h3>My Coach</h3>
+        <p>
+          "To me, dance is a combination of passion and discipline. It’s about pushing boundaries, telling stories, and finding excellence in every movement."
+        </p>
+      </div>
+      <!-- Column 3: Myself -->
+      <div class="perspective-column">
+        <h3>Myself</h3>
+        <p>
+          "Dance is my way of expressing what words cannot. It’s a journey of creativity, resilience, and connection, shaping who I am today."
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel Section -->
+  <!-- <div id="carousel" class="carousel">
+    <h2>Dance in Pictures</h2>
+    <div class="carousel-container">
+      <img [src]="images[activeIndex]" class="carousel-image" alt="Dance Image">
+      <button class="carousel-btn left" (click)="prevImage()">&#10094;</button>
+      <button class="carousel-btn right" (click)="nextImage()">&#10095;</button>
+    </div>
+  </div>
+   -->
+
+  <!-- Carousel Section -->
+<div id="carousel" class="carousel">
+    <h2>My Dance in Pictures</h2>
+    <p class="dance-info">
+        I practiced dance sport for 12 years at a proficient level. My journey includes mastering various styles and techniques that helped me develop a deep appreciation for dance as both an art and a sport.
+      </p>
+    <div class="carousel-container">
+      <img [src]="images[activeIndex]" class="carousel-image" alt="Dance Image">
+      <button class="carousel-btn left" (click)="prevImage()">&#10094;</button>
+      <button class="carousel-btn right" (click)="nextImage()">&#10095;</button>
+    </div>
+   
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; Project done by Chereji Iulia - Data Science in industry and society master student </p>
+  </div>
+  
