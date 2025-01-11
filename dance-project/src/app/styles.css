@@ -1,0 +1,155 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+/* Container Class */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #6a4c93, #b06ab3);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content Styling */
+main {
+    padding: 60px 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #6a4c93;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar li a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+}
+#perspectives {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  #perspectives h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+  }
+  .perspectives-container {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between columns */
+    flex-wrap: wrap; /* Allows columns to wrap to the next line on smaller screens */
+    gap: 20px; /* Adds space between columns */
+  }
+  .perspective-column {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis for responsive sizing */
+    max-width: 300px; /* Ensures columns don't become too wide */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  }
+  .perspective-column h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  .perspective-column p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+  }
+  @media (max-width: 768px) {
+    .perspectives-container {
+      flex-direction: column; /* Stacks columns vertically on smaller screens */
+      align-items: center;
+    }
+    .perspective-column {
+      max-width: 90%; /* Ensures columns utilize available width on small screens */
+    }
+  }

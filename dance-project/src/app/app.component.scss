@@ -1,0 +1,274 @@
+/* Variables */
+$primary-color: #e76f51;
+$secondary-color: #2a2a2a;
+$light-bg: #f7f9fb;
+$white: #fff;
+$text-color: #555;
+$heading-font: 'Montserrat', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+/* Global Styles */
+body {
+  font-family: $body-font;
+  margin: 0;
+  padding: 0;
+  background-color: $light-bg;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: $heading-font;
+  font-weight: 700;
+  color: $secondary-color;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Navbar with Scroll Progress */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: padding 0.3s ease;
+
+  &.shrink {
+    padding: 8px 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0 20px;
+
+      a {
+        color: $white;
+        font-size: 1.1rem;
+        padding: 8px 16px;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: $primary-color;
+  z-index: 200;
+  width: 0%; /* Initial width, updated dynamically with JavaScript */
+  transition: width 0.2s ease-out;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/assets/dans1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #2a2a2a;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: $primary-color;
+    }
+  }
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 40px;
+  background-color: $white;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+}
+
+/* Carousel Section */
+.carousel {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: $light-bg;
+  border-radius: 10px;
+
+  .carousel-container {
+    position: relative;
+    max-width: 400px;
+    height: 500px;
+    margin: 0 auto;
+
+    .carousel-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.8rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: $white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+
+      &.left {
+        left: -25px;
+      }
+
+      &.right {
+        right: -25px;
+      }
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: $secondary-color;
+  color: $white;
+  padding: 20px;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* Scroll Target Adjustments */
+.section-scroll-target {
+  scroll-margin-top: 80px; /* Prevents navbar overlap */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner .banner-content p {
+    font-size: 1.1rem;
+  }
+
+  .carousel-container {
+    max-width: 300px;
+    height: 400px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+}
+
+
+#perspectives {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+#perspectives h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #333;
+}
+.perspectives-container {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly between columns */
+  flex-wrap: wrap; /* Allows columns to wrap to the next line on smaller screens */
+  gap: 20px; /* Adds space between columns */
+}
+.perspective-column {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis for responsive sizing */
+  max-width: 300px; /* Ensures columns don't become too wide */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+.perspective-column h3 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 15px;
+}
+.perspective-column p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .perspectives-container {
+    flex-direction: column; /* Stacks columns vertically on smaller screens */
+    align-items: center;
+  }
+  .perspective-column {
+    max-width: 90%; /* Ensures columns utilize available width on small screens */
+  }
+}
