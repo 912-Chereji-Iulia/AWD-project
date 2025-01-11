@@ -106,17 +106,17 @@ a {
   .banner-content {
     position: relative;
     z-index: 2;
-    max-width: 700px;
+    max-width: 1000px;
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      font-size: 4rem;
+      margin-bottom: 30px;
       color: #2a2a2a;
     }
 
     p {
-      font-size: 1.5rem;
-      color: $primary-color;
+      font-size: 2rem;
+      color: $secondary-color;
     }
   }
 }
@@ -272,3 +272,483 @@ a {
     max-width: 90%; /* Ensures columns utilize available width on small screens */
   }
 }
+.flip-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 10px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.flip-card-front {
+  background-color: #f4f4f4;
+}
+.flip-card-back {
+  background-color: #ffddcc;
+  transform: rotateY(180deg);
+}
+.carousel-container iframe {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 720px;
+  height: 405px;
+  border-radius: 10px;
+}
+
+  body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  
+  /* Section Styling */
+  .section {
+      padding: 50px 10%;
+      margin-bottom: 40px;
+      border-radius: 10px;
+  }
+
+  .section h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+  }
+
+  .section p, .section ul {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      color: #555;
+  }
+
+  /* Etymology Section */
+  #etymology {
+      background-color: #ffddcc;
+      border-left: 5px solid ;
+  }
+
+  #etymology p {
+      text-indent: 30px;
+  }
+
+  /* History Section */
+  #history {
+      background-color: #ffddcc;
+      border-left: 5px solid;
+  }
+
+  #history p {
+      margin-bottom: 15px;
+  }
+
+  /* Dance Styles Section */
+  #styles {
+      background-color: #ffddcc;
+      border-left: 5px solid ;
+  }
+
+  #styles ul {
+      list-style-type: square;
+      margin-left: 30px;
+  }
+
+  #styles li {
+      margin-bottom: 10px;
+  }
+
+  /* Famous Dancers Section */
+  #famous {
+      background-color: #ffddcc;
+      border-left: 5px solid ;
+  }
+
+  #famous ul {
+      list-style-type: disc;
+      margin-left: 30px;
+  }
+
+  #famous li {
+      margin-bottom: 10px;
+  }
+
+  /* Gallery Section */
+  #carousel {
+      background-color: #f5f5f5;
+      text-align: center;
+  }
+
+  .carousel-container {
+      margin-top: 20px;
+  }
+
+  .carousel-container img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-container iframe {
+      border-radius: 15px;
+      max-width: 800px;
+  }
+
+  .carousel-btn {
+      font-size: 2em;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #ff6347;
+      margin: 0 10px;
+  }
+
+  .carousel-btn:hover {
+      color: #d74432;
+  }
+
+  .dance-info {
+      font-size: 1.1em;
+      color: #777;
+  }
+
+  /* Footer Styling */
+  .footer {
+      background-color: #222;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+  }
+
+  .footer p {
+      margin: 0;
+  }
+
+  /* Media Queries for Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+      .section {
+          padding: 30px 5%;
+      }
+
+      .carousel-container iframe {
+          width: 100%;
+      }
+
+      .navbar ul {
+          flex-direction: column;
+          padding: 0;
+      }
+
+      .navbar li {
+          margin-bottom: 10px;
+      }
+  }
+
+
+  /* Gallery Section Styling */
+.carousel {
+  padding: 50px 20px;
+  background-color: #f8f9fa; /* Light grey background for contrast */
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+.gallery-description p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #555;
+}
+
+.video-caption {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Embed YouTube Video */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.video-frame {
+  width: 85%; /* Wider video */
+  max-width: 1200px; /* Limit max width */
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #e76f51; /* Primary color on hover */
+}
+
+.carousel-btn.left {
+  left: -30px;
+}
+
+.carousel-btn.right {
+  right: -30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-frame {
+    width: 100%; /* Full width for mobile */
+    height: 300px; /* Smaller height for smaller screens */
+  }
+
+  .gallery-description p {
+    font-size: 1.1rem;
+    margin: 15px auto;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 8px 10px;
+  }
+}
+
+/* Video Container Styling */
+.video-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-container h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2a2a2a;
+}
+
+.video-frame {
+  width: 90%;
+  max-width: 1200px;
+  height: 420px; /* Increased height for a taller look */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-caption {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-frame {
+    width: 100%;
+    height: 300px; /* Slightly taller on mobile too */
+  }
+
+  .video-container h3 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Navbar Styling */
+/* Navbar default styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #e76f51;
+  color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Hide menu by default */
+  }
+
+  .navbar.active ul {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+    padding: 12px 16px;
+    text-align: center;
+    width: 100%; /* Make links take full width */
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+
+/* Flip Cards Section */
+.flip-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flip-card {
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.flip-card-front {
+  background-color: #f4f4f4;
+}
+
+.flip-card-back {
+  background-color: #ffddcc;
+  transform: rotateY(180deg);
+}
+
+/* Responsive Flip Cards */
+@media (max-width: 1024px) {
+  .flip-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .flip-card {
+    width: 100%;
+  }
+}
+

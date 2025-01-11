@@ -1,72 +1,149 @@
+
 <div class="navbar">
-    <ul>
-      <li><a href="#etymology">Etymology</a></li>
-      <li><a href="#history">History</a></li>
-      <li><a href="#styles">Dance Styles</a></li>
-      <li><a href="#famous">Famous Dancers</a></li>
-      <li><a href="#perspectives">Perspectives</a></li>
-      <li><a href="#carousel">Gallery</a></li>
-    </ul>
+  <button class="hamburger" (click)="toggleMenu()">☰</button>
+  <ul>
+    <li><a href="#etymology">Etymology</a></li>
+    <li><a href="#contexts">Contexts of Dance</a></li>
+    <li><a href="#history">History</a></li>
+    <li><a href="#derivatives">Derivative Forms</a></li>
+    <li><a href="#styles">Dance Styles</a></li>
+    <li><a href="#perspectives">Perspectives</a></li>
+    <li><a href="#famous">Famous Dancers</a></li>
+    <li><a href="#carousel">Gallery</a></li>
+  </ul>
+</div>
+
+<!-- Banner -->
+<div class="banner">
+  <div class="banner-content">
+    <h1>Welcome to the World of Dance</h1>
+
+    <p>Explore the art, history, and beauty of movement.</p>
   </div>
+</div>
+
+<!-- Etymology Section -->
+<div id="etymology" class="section">
+  <h2>Etymology of the Word "Dance"</h2>
+  <p>
+    The word "dance" originates from Middle English <strong>dans</strong>, Old French <strong>dancer</strong>, and Latin <em>daps</em>, meaning "feast" or "celebration." This suggests that dance was historically associated with joy and rituals.
+  </p>
+</div>
+
+<!-- Contexts Section -->
+<div id="contexts" class="section">
+  <h2>Contexts of Dance</h2>
+  <div class="flip-card-container">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Specific Context</h3>
+              </div>
+              <div class="flip-card-back">
+                  <p>In cultural ceremonies, dance symbolizes celebration and spirituality.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Broader Context</h3>
+              </div>
+              <div class="flip-card-back">
+                  <p>In nature, the waggle dance of bees guides others to nectar, showing the universality of movement.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Improbable Context</h3>
+              </div>
+              <div class="flip-card-back">
+                  <p>In computer networks, data packets "dance" across nodes in synchronized patterns.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Impossible Context</h3>
+              </div>
+              <div class="flip-card-back">
+                  <p>Atoms "dancing" during molecular vibrations is a poetic metaphor for subatomic motion.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- History Section -->
+<div id="history" class="section">
+  <h2>The History of Dance</h2>
+  <p>Dance is one of the oldest art forms, with evidence of ritual dances dating back 9,000 years.</p>
+  <p>In Renaissance Europe, ballet emerged as a technical and artistic form, while modern genres like hip-hop reflect cultural narratives.</p>
+</div>
+
+
+<div id="derivatives" class="section">
+  <h2>Derivative Forms of "Dance"</h2>
+  <div class="flip-card-container">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Dancer</h3>
+              </div>
+              <div class="flip-card-back">
+                  <p>A person who performs movements rhythmically to tell a story or express emotion.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Dancing</h3>
+              </div>
+              <div class="flip-card-back">
+                  <p>The act of performing rhythmic movements, often accompanied by music.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Choreography</h3>
+              </div>
+              <div class="flip-card-back">
+                  <p>The structured process of designing dance routines.</p>
+              </div>
+          </div>
+      </div>
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Danceable</h3>
+              </div>
+              <div class="flip-card-back">
+                  <p>Describes music or rhythms that invite movement and dancing.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Dance Styles Section -->
+<div id="styles" class="section">
+  <h2>Famous Dance Styles</h2>
+  <ul>
+      <li><strong>Ballet:</strong> Precision and grace rooted in Renaissance Italy.</li>
+      <li><strong>Hip-hop:</strong> Improvisation and storytelling from urban communities.</li>
+      <li><strong>Salsa:</strong> A rhythmic, lively dance of Latin origin.</li>
+      <li><strong>Dance sport:</strong> The sporty side of the dance, with more than 10 styles present in competitions, separated in 2 categories : <strong>Latin</strong> and <strong>Ballroom</strong></li>
+  </ul>
   
-  <!-- Banner Image Styling (Full Screen) -->
-  <div class="banner">
-    <div class="banner-content">
-      <h1>Welcome to the World of Dance</h1>
-      <p>Explore the art, history, and beauty of movement.</p>
-    </div>
-  </div>
-  
-  <!-- Etymology Section -->
-  <div id="etymology" class="section">
-    <h2>Etymology of the Word "Dance"</h2>
-    <p>
-      The word "dance" has its origins in the Middle English word <strong>dans</strong>, which comes from the Old French <strong>dancer</strong>, meaning "to stretch out" or "to move lightly." The root of these words can be traced to the Latin word <em>daps</em>, meaning "a feast" or "celebration," suggesting that dance was originally part of ceremonial feasts and rituals.
-    </p>
-    <p>
-      Over time, the meaning expanded to include any rhythmic movement to music, evolving across different cultures and languages.
-    </p>
-  </div>
-  
-  <!-- History Section -->
-  <div id="history" class="section">
-    <h2>The History of Dance</h2>
-    <p>
-      Dance is believed to be one of the oldest art forms. Evidence of early dance dates back to prehistory, with ancient civilizations like the Egyptians, Greeks, and Indians incorporating dance into rituals and performances. The first known depictions of dancing in human culture appear in cave paintings dating back over 9,000 years.
-    </p>
-    <p>
-      In ancient Greece, dance was seen as a form of storytelling. During the Renaissance period, ballet emerged as a highly structured form of dance that combined art and performance. Since then, dance has been an integral part of cultural expression, evolving into various forms and techniques.
-    </p>
-  </div>
-  
-  <!-- Dance Styles Section -->
-  <div id="styles" class="section">
-    <h2>Famous Dance Styles</h2>
-    <p>
-      Dance is incredibly diverse, and the world boasts a rich array of styles, each with unique cultural significance and techniques. Below are a few of the most iconic dance styles:
-    </p>
-    <ul>
-      <li><strong>Ballet</strong>: A highly technical and artistic form of dance that originated in Renaissance Italy. It focuses on precision, control, and grace.</li>
-      <li><strong>Hip-hop</strong>: A street dance style that emerged in the 1970s in New York. It emphasizes improvisation, energy, and personal expression.</li>
-      <li><strong>Salsa</strong>: A lively, rhythmic dance originating from Cuban and Caribbean cultures, often performed to upbeat Latin music.</li>
-      <li><strong>Tango</strong>: A passionate and dramatic ballroom dance that originated in Argentina in the late 19th century.</li>
-      <li><strong>Contemporary</strong>: A modern form that blends elements of ballet, jazz, and modern dance, often characterized by fluid, expressive movements.</li>
-    </ul>
-  </div>
-  
-  <!-- Famous Dancers Section -->
-  <div id="famous" class="section">
-    <h2>Famous Dancers in History</h2>
-    <p>
-      Dance has produced numerous legendary figures who have shaped the art form and inspired generations. Some of the most iconic dancers include:
-    </p>
-    <ul>
-      <li><strong>Martha Graham</strong>: A pioneer of modern dance known for her expressive, emotional style and the development of the "Graham Technique."</li>
-      <li><strong>Fred Astaire</strong>: A legendary figure in American film and ballroom dance, known for his elegance and innovative choreography.</li>
-      <li><strong>Michael Jackson</strong>: A pop icon whose groundbreaking music videos and dance moves, such as the moonwalk, changed the world of pop music and dance forever.</li>
-      <li><strong>Anna Pavlova</strong>: A Russian prima ballerina famous for her portrayal of "The Dying Swan," one of the most iconic moments in ballet history.</li>
-    </ul>
-  </div>
+</div>
+
+
 
   <!-- Perspectives Section -->
   <div id="perspectives" class="section">
@@ -95,33 +172,69 @@
       </div>
     </div>
   </div>
-  <!-- Carousel Section -->
-  <!-- <div id="carousel" class="carousel">
-    <h2>Dance in Pictures</h2>
-    <div class="carousel-container">
-      <img [src]="images[activeIndex]" class="carousel-image" alt="Dance Image">
-      <button class="carousel-btn left" (click)="prevImage()">&#10094;</button>
-      <button class="carousel-btn right" (click)="nextImage()">&#10095;</button>
-    </div>
-  </div>
-   -->
 
-  <!-- Carousel Section -->
+<!-- Famous Dancers Section -->
+<div id="famous" class="section">
+  <h2>Famous Dancers in History</h2>
+  <p>
+    Dance icons inspire generations by shaping new techniques and narratives. Here’s how they’ve redefined movement:
+  </p>
+  <ul>
+      <li><strong>Martha Graham:</strong> Revolutionized modern dance with raw emotion.</li>
+      <li><strong>Fred Astaire:</strong> Merged elegance with innovation in tap and ballroom dance.</li>
+      <li><strong>Michael Jackson:</strong> Introduced groundbreaking moves like the moonwalk.</li>
+  </ul>
+</div>
+
+<!-- Gallery Section
 <div id="carousel" class="carousel">
-    <h2>My Dance in Pictures</h2>
-    <p class="dance-info">
-        I practiced dance sport for 12 years at a proficient level. My journey includes mastering various styles and techniques that helped me develop a deep appreciation for dance as both an art and a sport.
-      </p>
-    <div class="carousel-container">
+  <h2>My Dance Journey in Pictures</h2>
+  <p class="dance-info">
+      I practiced dance sport for 12 years at a competitive level. Dance has shaped my resilience and creativity, helping me gain a deep, personal understanding of movement.
+  </p>
+  <div class="carousel-container">
       <img [src]="images[activeIndex]" class="carousel-image" alt="Dance Image">
       <button class="carousel-btn left" (click)="prevImage()">&#10094;</button>
       <button class="carousel-btn right" (click)="nextImage()">&#10095;</button>
-    </div>
+  </div>
+  <p class="dance-info">
+   Below, there is a Quickstep performed by the all time best couple in dance sport, from Romania, them also being World Champios.
+</p>
+  <div class="carousel-container">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/rn1wph8uT7Q" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+
+</div> -->
+<!-- Gallery Section -->
+<div id="carousel" class="carousel">
+  <h2>My Dance Journey in Pictures</h2>
+  <div class="gallery-description">
+    <p>
+      I practiced dance sport for 12 years at a competitive level. Dance has shaped my resilience and creativity, helping me gain a deep, personal understanding of movement.
+    </p>
+  </div>
+
+   <!-- Image Carousel (if any images are present) -->
+   <div class="carousel-container">
+    <img [src]="images[activeIndex]" class="carousel-image" alt="Dance Image">
+    <button class="carousel-btn left" (click)="prevImage()">&#10094;</button>
+    <button class="carousel-btn right" (click)="nextImage()">&#10095;</button>
+
    
-  </div>
-  
-  <!-- Footer -->
-  <div class="footer">
-    <p>&copy; Project done by Chereji Iulia - Data Science in industry and society master student </p>
-  </div>
-  
+</div>
+<div class="video-container">
+  <h3>Featured Dance Video</h3>
+  <iframe class="video-frame" src="https://www.youtube.com/embed/rn1wph8uT7Q" frameborder="0" allowfullscreen></iframe>
+  <p class="video-caption">Below is a Quickstep performed by the all-time best couple in dance sport, from Romania, who are also world champions.</p>
+</div>
+</div>
+
+
+<!-- Footer Section -->
+<div class="footer">
+  <p>&copy; Project done by Chereji Iulia - Data Science in Industry and Society Master Student</p>
+</div>
+
+
+ 

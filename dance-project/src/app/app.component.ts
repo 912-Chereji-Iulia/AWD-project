@@ -26,6 +26,16 @@ export class AppComponent {
   historyText = 'Dance has existed since the dawn of human culture. It is both a form of social interaction and a way to express emotions and ideas through movement.';
   funFact = 'Did you know? Dance is one of the oldest human activities, predating written history.';
   activeIndex = 0; // Track the current image
+
+  toggleMenu(): void {
+    const navbar: HTMLElement | null = document.querySelector('.navbar ul');
+    
+    if (navbar) {
+      const isVisible: boolean = navbar.style.display === 'flex';
+      navbar.style.display = isVisible ? 'none' : 'flex';
+    }
+  }
+  
   
   // Move to the next image
   nextImage(): void {
